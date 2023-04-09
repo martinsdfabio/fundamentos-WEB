@@ -1,0 +1,95 @@
+/* reset básico de css, só pra garantir que todos os navegadores abram a pagina por igual */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* o . é para chamar a classe */
+  .navbar {
+    font-size: 20px;
+    /* transformar o bloco em flexivel, por padrão os itens internos ficarão lado a lado */
+    display: flex;
+    /* alinhar o conteudo do bloco flex ao centro da tela */
+    justify-content: center;
+    /* inserir um vão entre os elementos */
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .navbar a:hover{
+    color:rgb(156, 24, 24)
+  }
+
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    background: #8a8888;
+    /* definir uma largura de acordo com a porcentagem da tela */
+    width: 60%;
+    /* margem 0 em cima e em baixo do elemento, e por igual aos lados, de forma a centralizar o conteudo */
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 500px;
+    height: 200px;
+  }
+  
+  .video {
+    width: 75%;
+    /* aspect-ratio serve para manter a proporção do elemento, como uma foto ou uma tela de TV */
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    /* transformar um elemento que não seja BLOCK por padrão, em uma elemento de bloco */
+    display: block;
+  }
+  
+  body{
+    background-color: #8a8888;
+  }
+
+  .foto-responsiva {
+    width: max(250px, 25%);
+    object-fit: contein;
+  }
+  nav {
+    font-size: 20px;
+    gap: 10px;
+    background-color: #8a8888;
+    padding-right: 10px;
+    color: #8a8888;
+  }
+
+  body{
+    font-size:15px;
+    
+    }
+    
+    h1{
+    font-size: 75px;
+    
+    }
+
+    .container {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pad-30{
+      padding: 30px;
+    }
+
+    .tm-social{
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
